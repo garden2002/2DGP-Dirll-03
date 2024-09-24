@@ -11,7 +11,6 @@ def run_circle():
 
     r, cx, cy= 300, 800 // 2, 600 // 2
 
-    
     for degree in range(0,360,3):
 
         theta = math.radians(degree)
@@ -21,19 +20,37 @@ def run_circle():
         clear_canvas_now()
         character.draw_now(x,y)
         delay(0.1)
+    pass
 
+def run_top():
+    print('top')
+    pass
 
+def run_right():
+    print('right')
+    pass
 
-    
+def run_bottom():
+    print('bottom')
+    pass
+
+def run_left():
+    print('left')
     pass
 
 def run_rectangle():
     print('rectangle')
+
+    run_top()
+    run_right()
+    run_bottom()
+    run_left()
+    
     pass
 
 # fill here
 while True:
-    run_circle()
+    #run_circle()
     run_rectangle()
     break
 
