@@ -36,7 +36,7 @@ def run_top():
 def run_right():
     print('right')
 
-    for y in range(550,0,-10):
+    for y in range(550,50,-10):
         draw_boy(790 , y)
         
     pass
@@ -51,22 +51,39 @@ def run_bottom():
 
 def run_left():
     print('left')
+    
+    for y in range(50,550,10):
+        draw_boy(0 , y)
     pass
 
 def run_rectangle():
     print('rectangle')
 
-    #run_top()
-    #run_right()
+    run_top()
+    run_right()
     run_bottom()
     run_left()
-    
     pass
+
+def run_digonal():
+    print('digonal')
+    
+    for x in range(100, 0, -2):
+        draw_boy((8 * x)- 10 , 5 * x)
+        
+    pass
+
+def run_triangle():
+    run_top()
+    run_digonal()
+    run_left()
 
 # fill here
 while True:
     #run_circle()
-    run_rectangle()
+
+    #run_rectangle()
+    run_triangle()
     break
 
 
